@@ -10,14 +10,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document2</title>
+    <title>Home</title>
 
 </head>
 
 <body>
     <header class="header">
         <div class="header__inner">
-            <div class="header_inner-top container">
+            <div class="header__inner-top container">
                 <p>✨Discover Your Dream Property with Estatein</p>
                 <a href="#">Learn More</a>
                 <span class="close">
@@ -26,19 +26,21 @@
             </div>
 
             <div class="header__inner-bottom p-x">
-                <div class="header__bottom-cover">
+                <div class="header__bottom-cover container">
                     <div class="logo">
                         <img src="./img/home/logo.svg" alt="logo">
                     </div>
-                    <a class="burger__menu" href="">
+
+                    <label for="burger" class="burger__menu">
                         <img src="./img/home/menu.svg" alt="burger">
-                    </a>
+                    </label>
+                    <input type="checkbox" id="burger">
                     <nav class="header__nav">
                         <ul>
-                            <li class="active"><a href="#">Home</a></li>
-                            <li class=""><a href="#">About Us</a></li>
-                            <li class=""><a href="#">Properties</a></li>
-                            <li class=""><a href="#">Services</a></li>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li class=""><a href="./about-us.html">About Us</a></li>
+                            <li class=""><a href="./properties.html">Properties</a></li>
+                            <li class=""><a href="./services.html">Services</a></li>
                         </ul>
                     </nav>
                     <button class="header__contact">Contact Us</button>
@@ -107,7 +109,390 @@
                 </div>
             </div>
         </section>
+        <section class="featured">
+            <div class="container">
+                <div class="featured__inner p-x">
+                    <div class="title-block">
+                        <div class="title__block-inner">
+                            <img src="./img/home/design-stars.svg" alt="design-stars">
+                            <div class="title-block-top">
+                                <h2>Featured Properties</h2>
+                                <p>Explore our handpicked selection of featured properties. Each listing offers a
+                                    glimpse
+                                    into exceptional homes and investments available through Estatein. Click "View
+                                    Details"
+                                    for more information.</p>
+                            </div>
+                        </div>
+                        <div class="title-block-btn">
+                            <button>View All Properties</button>
+                        </div>
+                    </div>
+                    <div class="featured__cards">
+                        <div class="featured__card">
+                            <img class="featured__card-img" src="./img/home/featured-card-img-1.png" alt="img-1">
+                            <h3>Seaside Serenity Villa</h3>
+                            <p>
+                                A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a
+                                    href="#">Read More</a>
+                            </p>
+                            <ul class="featured__rooms">
+                                <li>
+                                    <img src="./img/home/featured-icon-1.svg" alt="bedroom">
+                                    <span>4-Bedroom</span>
+                                </li>
+                                <li>
+                                    <img src="./img/home/featured-icon-2.svg" alt="bathroom">
+                                    <span>3-Bathroom</span>
+                                </li>
+                                <li>
+                                    <img src="./img/home/featured-icon-3.svg" alt="villa">
+                                    <span>Villa</span>
+                                </li>
+                            </ul>
+                            <div class="featured__card-price">
+                                <div class="featured__totalprice">
+                                    <span>Price</span>
+                                    <span>$550,000</span>
+                                </div>
+                                <button>View Property Details</button>
+                            </div>
+                        </div>
+                        <div class="featured__card">
+                            <img src="./img/home/featured-card-img-1.png" alt="img-1">
+                            <h3>Seaside Serenity Villa</h3>
+                            <p>
+                                A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a
+                                    href="#">Read More</a>
+                            </p>
+                            <ul class="featured__rooms">
+                                <li>
+                                    <img src="./img/home/featured-icon-1.svg" alt="bedroom">
+                                    <span>4-Bedroom</span>
+                                </li>
+                                <li>
+                                    <img src="./img/home/featured-icon-2.svg" alt="bathroom">
+                                    <span>3-Bathroom</span>
+                                </li>
+                                <li>
+                                    <img src="./img/home/featured-icon-3.svg" alt="villa">
+                                    <span>Villa</span>
+                                </li>
+                            </ul>
+                            <div class="featured__card-price">
+                                <div class="featured__totalprice">
+                                    <span>Price</span>
+                                    <span>$550,000</span>
+                                </div>
+                                <button>View Property Details</button>
+                            </div>
+                        </div>
+                        <div class="featured__card">
+                            <img src="./img/home/featured-card-img-1.png" alt="img-1">
+                            <h3>Seaside Serenity Villa</h3>
+                            <p>
+                                A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a
+                                    href="#">Read More</a>
+                            </p>
+                            <ul class="featured__rooms">
+                                <li>
+                                    <img src="./img/home/featured-icon-1.svg" alt="bedroom">
+                                    <span>4-Bedroom</span>
+                                </li>
+                                <li>
+                                    <img src="./img/home/featured-icon-2.svg" alt="bathroom">
+                                    <span>3-Bathroom</span>
+                                </li>
+                                <li>
+                                    <img src="./img/home/featured-icon-3.svg" alt="villa">
+                                    <span>Villa</span>
+                                </li>
+                            </ul>
+                            <div class="featured__card-price">
+                                <div class="featured__totalprice">
+                                    <span>Price</span>
+                                    <span>$550,000</span>
+                                </div>
+                                <button>View Property Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <div class="pagination__num"><span>01</span> of <span>60</span></div>
+                        <div class="pagination__arrows">
+                            <button class="arrow-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none">
+                                    <path fill="gray" fill-rule="evenodd"
+                                        d="M21 9c0 .621-.504 1.125-1.125 1.125H3.918l6.237 5.94a1.125 1.125 0 1 1-1.56 1.62L.345 9.812a1.125 1.125 0 0 1 0-1.622L8.595.314a1.125 1.125 0 1 1 1.56 1.622L3.918 7.875h15.957C20.496 7.875 21 8.379 21 9"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <button class="arrow-right active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none">
+                                    <path fill="gray" fill-rule="evenodd"
+                                        d="M21 9c0 .621-.504 1.125-1.125 1.125H3.918l6.237 5.94a1.125 1.125 0 1 1-1.56 1.62L.345 9.812a1.125 1.125 0 0 1 0-1.622L8.595.314a1.125 1.125 0 1 1 1.56 1.622L3.918 7.875h15.957C20.496 7.875 21 8.379 21 9"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="clients">
+            <div class="container">
+                <div class="clients__inner">
+                    <div class="title-block">
+                        <img src="./img/home/design-stars.svg" alt="design-stars">
+                        <div class="title-block-top">
+                            <h2>What Our Clients Say</h2>
+                            <p>Read the success stories and heartfelt testimonials from our valued clients. Discover why
+                                they chose Estatein for their real estate needs.</p>
+                        </div>
+                        <button>View All Testimonials</button>
+                    </div>
+                    <div class="clients__cards">
+                        <div class="clients__card">
+                            <ul class="clients__card-list" aria-label="Rating: 5 out of 5 stars">
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                            </ul>
+                            <h3>Exceptional Service!</h3>
+                            <p>Our experience with Estatein was outstanding. Their team's dedication and professionalism
+                                made finding our dream home a breeze. Highly recommended!</p>
+
+                            <div class="clients__card-person">
+                                <img src="./img/home/person-1.webp" alt="Wade Warren">
+                                <div class="clients__card-descr">
+                                    <span>Wade Warren</span>
+                                    <span>USA, California</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__card">
+                            <ul class="clients__card-list" aria-label="Rating: 5 out of 5 stars">
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                            </ul>
+                            <h3>Efficient and Reliable</h3>
+                            <p>Estatein provided us with top-notch service. They helped us sell our property quickly and
+                                at a great price. We couldn't be happier with the results.</p>
+
+                            <div class="clients__card-person">
+                                <img src="./img/home/person-2.webp" alt="Emelie Thomson">
+                                <div class="clients__card-descr">
+                                    <span>Emelie Thomson</span>
+                                    <span>USA, Florida</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__card">
+                            <ul class="clients__card-list" aria-label="Rating: 5 out of 5 stars">
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                                <li><img src="./img/home/star.svg" alt=""></li>
+                            </ul>
+                            <h3>Trusted Advisors</h3>
+                            <p>The Estatein team guided us through the entire buying process. Their knowledge and
+                                commitment to our needs were impressive. Thank you for your support!</p>
+
+                            <div class="clients__card-person">
+                                <img src="./img/home/person-1.webp" alt="John Mans">
+                                <div class="clients__card-descr">
+                                    <span>John Mans</span>
+                                    <span>USA, Nevada</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <div class="pagination__num"><span>01</span> of <span>60</span></div>
+                        <div class="pagination__arrows">
+                            <button class="arrow-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none">
+                                    <path fill="gray" fill-rule="evenodd"
+                                        d="M21 9c0 .621-.504 1.125-1.125 1.125H3.918l6.237 5.94a1.125 1.125 0 1 1-1.56 1.62L.345 9.812a1.125 1.125 0 0 1 0-1.622L8.595.314a1.125 1.125 0 1 1 1.56 1.622L3.918 7.875h15.957C20.496 7.875 21 8.379 21 9"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <button class="arrow-right">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none">
+                                    <path fill="#fff" fill-rule="evenodd"
+                                        d="M0 9c0-.621.504-1.125 1.125-1.125h15.957l-6.237-5.94a1.125 1.125 0 1 1 1.56-1.62l8.25 7.874a1.125 1.125 0 0 1 0 1.622l-8.25 7.875a1.125 1.125 0 1 1-1.56-1.622l6.237-5.939H1.125A1.125 1.125 0 0 1 0 9"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- <section class="frequently">
+            <div class="container">
+                <div class="frequently__inner">
+                    <div class="title-block">
+                        <img src="./img/home/design-stars.svg" alt="design-stars">
+                        <div class="title-block-top">
+                            <h2>What Our Clients Say</h2>
+                            <p>Read the success stories and heartfelt testimonials from our valued clients. Discover why
+                                they chose Estatein for their real estate needs.</p>
+                        </div>
+                        <button>View All Testimonials</button>
+                    </div>
+                    <div class="frequently__items">
+                        <div class="frequently__item">
+                            <h3>How do I search for properties on Estatein?</h3>
+                            <p>Learn how to use our user-friendly search tools to find properties that match your
+                                criteria.</p>
+                            <span>Read More</span>
+                        </div>
+                        <div class="frequently__item">
+                            <h3>What documents do I need to sell my property through Estatein?</h3>
+                            <p>Find out about the necessary documentation for listing your property with us.</p>
+                            <span>Read More</span>
+                        </div>
+                        <div class="frequently__item">
+                            <h3>How can I contact an Estatein agent?</h3>
+                            <p>Discover the different ways you can get in touch with our experienced agents.</p>
+                            <span>Read More</span>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <div class="pagination__num"><span>01</span> of <span>60</span></div>
+                        <div class="pagination__arrows">
+                            <button class="arrow-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none">
+                                    <path fill="gray" fill-rule="evenodd"
+                                        d="M21 9c0 .621-.504 1.125-1.125 1.125H3.918l6.237 5.94a1.125 1.125 0 1 1-1.56 1.62L.345 9.812a1.125 1.125 0 0 1 0-1.622L8.595.314a1.125 1.125 0 1 1 1.56 1.622L3.918 7.875h15.957C20.496 7.875 21 8.379 21 9"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <button class="arrow-right">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none">
+                                    <path fill="#fff" fill-rule="evenodd"
+                                        d="M0 9c0-.621.504-1.125 1.125-1.125h15.957l-6.237-5.94a1.125 1.125 0 1 1 1.56-1.62l8.25 7.874a1.125 1.125 0 0 1 0 1.622l-8.25 7.875a1.125 1.125 0 1 1-1.56-1.622l6.237-5.939H1.125A1.125 1.125 0 0 1 0 9"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
     </main>
+    <!-- <footer>
+        <div class="container">
+            <div class="footer__inner">
+                <div class="title-block">
+                    <div class="title-block-top">
+                        <h2>Start Your Real Estate Journey Today</h2>
+                        <p>Your dream property is just a click away. Whether you're looking for a new home, a
+                            strategic investment, or expert real estate advice, Estatein is here to assist you every
+                            step of the way. Take the first step towards your real estate goals and explore our
+                            available properties or get in touch with our team for personalized assistance.</p>
+                    </div>
+                    <button>Explore Properties</button>
+                </div>
+                <div class="footer__content">
+                    <form class="footer__email">
+                        <img src="./img/home/logo.svg" alt="logo">
+                        <div class="footer__email-wrapper">
+                            <input type="email" aria-label="Enter your email to subscribe"
+                                placeholder="Enter Your Email">
+                            <img src="./img/home/email-icon.svg" alt="email" aria-hidden="true">
+                            <button type="submit" aria-label="send email">
+                                <img src="./img/home/send-icon.svg" alt="send-email" aria-hidden="true">
+                            </button>
+                        </div>
+                    </form>
+                    <nav aria-label="footer navigation">
+                        <div class="footer__nav">
+                            <div class="footer__nav-col">
+                                <h3>Home</h3>
+                                <ul>
+                                    <li><a href="#">Hero Section</a></li>
+                                    <li><a href="#">Features</a></li>
+                                    <li><a href="#">Properties</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">FAQ’s</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__nav-col">
+                                <h3>About Us</h3>
+                                <ul>
+                                    <li><a href="#">Our Story</a></li>
+                                    <li><a href="#">Our Works</a></li>
+                                    <li><a href="#">How It Works</a></li>
+                                    <li><a href="#">Our Team</a></li>
+                                    <li><a href="#">Our Clients</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__nav-col">
+                                <h3>Properties</h3>
+                                <ul>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Categories</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__nav-col">
+                                <h3>Services</h3>
+                                <ul>
+                                    <li><a href="#">Valuation Mastery</a></li>
+                                    <li><a href="#">Strategic Marketing</a></li>
+                                    <li><a href="#">Negotiation Wizardry</a></li>
+                                    <li><a href="#">Closing Success</a></li>
+                                    <li><a href="#">Property Management</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__nav-col">
+                                <h3>Contact Us</h3>
+                                <ul>
+                                    <li><a href="#">Contact Form</a></li>
+                                    <li><a href="#">Our Offices</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer__copyright">
+                    <div class="copyright__terms">
+                        <span>@2023 Estatein. All Rights Reserved.</span>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                    <ul class="copyright__social" aria-label="Social media links">
+                        <li>
+                            <a href="#">
+                                <img src="./img/home/fb.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/home/linkedin.svg" alt="linkedin">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/home/tweeter.svg" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/home/youtube.svg" alt="youtube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> -->
 </body>
 
 </html>
