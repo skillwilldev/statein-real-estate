@@ -10,6 +10,23 @@ body {
     padding: 0 11px;
 }
 
+.cont-cover {
+    max-width: 1920px;
+    margin: 0px auto;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    scrollbar-width: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+}
+
 .flex {
     display: flex;
     align-items: center;
@@ -438,14 +455,19 @@ h1 {
     }
 }
 
+.featured {
+    margin-bottom: 90px;
+}
 
 .featured__cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(512px, 1fr));
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(512px, 1fr)); */
+    display: flex;
     gap: 30px;
     padding-bottom: 50px;
     margin-bottom: 20px;
     border-bottom: 1px solid #262626;
+    overflow-x: auto;
 }
 
 .featured__card {
@@ -453,7 +475,7 @@ h1 {
     border: 1px solid #262626;
     border-radius: 12px;
     padding: 40px;
-    /* max-width: 512px; */
+    min-width: 512px;
 
     >img {
         border-radius: 10px;
@@ -604,6 +626,114 @@ h1 {
     }
 }
 
+.clients {
+    margin-bottom: 90px;
+}
+
+.clients .clients__cards {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #262626;
+    overflow-x: auto;
+
+    .clients__card {
+        background-color: #141414;
+        border: 1px solid #262626;
+        border-radius: 12px;
+        padding: 50px;
+        min-width: 512px;
+
+        .clients__card-list {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 40px;
+
+            li {
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background-color: #1A1A1A;
+                border: 1px solid #262626;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+
+                img {
+                    width: 22px;
+                    height: 22px;
+                    transition: all .3s ease-in-out;
+                    transform-origin: center center;
+                }
+
+                &:active img {
+                    transform: rotate(180deg) translate(1px, -1px);
+                    ;
+
+                }
+
+                &:hover img {
+                    transform: rotate(180deg) translate(1px, -1px);
+
+                }
+            }
+        }
+
+        >h3 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 150%;
+            color: #FFFFFF;
+            padding-bottom: 14px;
+        }
+
+        >p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            color: #FFFFFF;
+            margin-bottom: 40px;
+        }
+
+        .clients__card-person {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+
+            .clients__card-descr {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+
+                span:first-child {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                }
+
+                span:last-child {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #999999;
+                }
+            }
+        }
+    }
+
+}
+
 
 @media(width < 1520px) {
     .dream__items {
@@ -626,6 +756,19 @@ h1 {
 
     .discovery__img img:nth-child(1) {
         max-width: 400px;
+    }
+}
+
+@media (width < 1300px) {
+
+    .featured__inner,
+    .clients__inner {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .title-block .title-block-top p {
+        max-width: 830px;
     }
 }
 
@@ -656,6 +799,19 @@ h1 {
     }
 }
 
+
+@media (width < 1070px) {
+    .title-block {
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+
+    .title-block .title-block-top p {
+        max-width: 100%;
+    }
+}
+
 @media (width < 960px) {
     .discovery__items .dream {
         padding-left: 0px;
@@ -670,6 +826,11 @@ h1 {
     .discovery__img img:nth-child(3) {
         left: 49%;
         top: 8%;
+    }
+
+    .featured__inner {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -753,6 +914,12 @@ h1 {
     .header .close {
         right: 16px;
     }
+
+    .featured__inner,
+    .clients__inner {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 @media (width < 910px) {
@@ -819,6 +986,90 @@ h1 {
     }
 
 } */
+
+@media (width < 544px) {
+    .featured__card {
+        min-width: clamp(18rem, -2rem + 100.000vw, 32rem);
+    }
+
+    .featured__card {
+        padding: clamp(0.625rem, -2.054rem + 13.393vw, 2.5rem);
+    }
+
+    .featured__card h3 {
+        font-size: clamp(1.188rem, 0.741rem + 2.232vw, 1.5rem);
+    }
+
+    .featured__card p {
+        font-size: clamp(0.813rem, 0.366rem + 2.232vw, 1.125rem);
+    }
+
+    .featured__card .featured__rooms {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+
+    .featured__card .featured__card-price .featured__totalprice span:first-child {
+        font-size: clamp(1rem, 0.821rem + 0.893vw, 1.125rem);
+    }
+
+    .featured__card .featured__card-price .featured__totalprice span:last-child {
+        font-size: clamp(1.25rem, 0.893rem + 1.786vw, 1.5rem);
+    }
+
+    .featured__card .featured__card-price button {
+        font-size: clamp(0.875rem, 0.875rem + 0.000vw, 0.875rem);
+        padding: clamp(0.625rem, -0.089rem + 3.571vw, 1.125rem) clamp(0.75rem, -3.089rem + 19.196vw, 3.438rem);
+        border-radius: clamp(0.313rem, -0.134rem + 2.232vw, 0.625rem);
+    }
+
+    .pagination .pagination__arrows button {
+        width: clamp(2.813rem, 1.652rem + 5.804vw, 3.625rem);
+        height: clamp(2.813rem, 1.652rem + 5.804vw, 3.625rem);
+    }
+
+    .pagination .pagination__num {
+        font-size: clamp(1rem, 0.821rem + 0.893vw, 1.125rem);
+    }
+
+    .dream__btns button {
+        padding: clamp(0.875rem, 0.125rem + 0.833vw, 1.125rem) clamp(1.25rem, 0.5rem + 0.833vw, 1.5rem);
+    }
+
+
+    .clients .clients__cards .clients__card {
+        padding: clamp(0.625rem, -2.946rem + 17.857vw, 3.125rem);
+    }
+
+
+    .clients .clients__cards .clients__card {
+        min-width: clamp(18rem, -2rem + 100.000vw, 32rem);
+    }
+
+    .clients .clients__cards .clients__card h3 {
+        font-size: clamp(1.25rem, 0.893rem + 1.786vw, 1.5rem);
+    }
+
+    .clients .clients__cards .clients__card p {
+        font-size: clamp(1rem, 0.821rem + 0.893vw, 1.125rem);
+    }
+
+    .clients__card-descr span:first-child {
+        font-size: clamp(1.125rem, 0.946rem + 0.893vw, 1.25rem) !important;
+    }
+
+    .clients__card-descr span:last-child {
+        font-size: clamp(1rem, 0.821rem + 0.893vw, 1.125rem) !important
+    }
+
+
+    .title-block .title-block-top h2 {
+        font-size: clamp(2rem, 0.571rem + 7.143vw, 3rem);
+    }
+
+}
 
 @media (width < 430px) {
     .dream__btns {
