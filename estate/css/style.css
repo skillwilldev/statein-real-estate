@@ -165,15 +165,25 @@ header .close:active {
                     border: 1px solid transparent;
                 }
 
-                &.active a {
+                &:active a {
                     border: 1px solid #262626;
                     background-color: #141414;
                 }
 
-                /* &:hover a {
-                    background-color: #242424;
-                    border: 1px solid #3a3a3a;
-                } */
+                &:hover a {
+                    border: 1px solid #262626;
+                    background-color: #141414;
+                }
+
+                &:focus-within a {
+                    border: 1px solid #262626;
+                    background-color: #141414;
+                }
+
+                &:focus a {
+                    border: 1px solid #262626;
+                    background-color: #141414;
+                }
             }
         }
 
@@ -205,11 +215,13 @@ header .close:active {
 }
 
 main {
-    margin-bottom: 110px;
+    /* margin-bottom: 110px; */
+    margin-bottom: clamp(3.75rem, 3.125rem + 3.125vw, 6.875rem);
 }
 
 .discovery {
-    margin-bottom: 110px;
+    /* margin-bottom: 110px; */
+    margin-bottom: clamp(3.75rem, 3.125rem + 3.125vw, 6.875rem);
 }
 
 
@@ -413,7 +425,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
+    margin-bottom: clamp(2.5rem, 2rem + 2.500vw, 5rem);
 
     img {
         width: 69px;
@@ -460,7 +473,8 @@ h1 {
 }
 
 .featured {
-    margin-bottom: 110px;
+    /* margin-bottom: 110px; */
+    margin-bottom: clamp(3.75rem, 3.125rem + 3.125vw, 6.875rem);
 }
 
 .featured__cards {
@@ -631,7 +645,8 @@ h1 {
 }
 
 .clients {
-    margin-bottom: 110px;
+    /* margin-bottom: 110px; */
+    margin-bottom: clamp(3.75rem, 3.125rem + 3.125vw, 6.875rem);
 }
 
 .clients .clients__cards {
@@ -810,21 +825,21 @@ h1 {
 }
 
 .footer-decore {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: clamp(2.5rem, 1.75rem + 3.750vw, 6.25rem);
+    padding-bottom: clamp(2.5rem, 1.75rem + 3.750vw, 6.25rem);
     border-top: 1px solid #262626;
     border-bottom: 1px solid #262626;
 }
 
 footer .footer__top-cover {
-    margin-bottom: 100px;
+    margin-bottom: clamp(2.5rem, 1.75rem + 3.750vw, 6.25rem);
 }
 
 
 .footer__content-inner {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: clamp(3.75rem, 3.25rem + 2.500vw, 6.25rem);
 }
 
 .footer__email {
@@ -1268,8 +1283,9 @@ footer .footer__top-cover {
 
 @media (width < 561px) {
     .footer__copyright {
-        justify-content: center;  
+        justify-content: center;
     }
+
     .footer__copyright .copyright__terms {
         align-items: center;
         order: 2;
