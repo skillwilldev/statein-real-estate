@@ -1,0 +1,102 @@
+.journey .discovery__img img:nth-child(1) {
+    position: relative;
+    z-index: 3;
+    display: block;
+    margin: unset;
+    margin-left: auto;
+    max-width: 610px;
+    height: auto;
+    margin-top: auto;
+    /* border: 1px solid green; */
+
+}
+
+
+.journey .discovery__img img:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 755px;
+    height: auto;
+    margin-left: auto;
+    margin-top: auto;
+    object-fit: contain;
+    object-position: center;
+    /* background: linear-gradient(238.21deg, #2A213F 8.76%, rgba(25, 25, 25, 0) 50.09%); */
+    z-index: 2;
+    /* border: 1px solid rgb(128, 49, 0); */
+}
+
+
+.journey .dream {
+    >img {
+        width: 69px;
+        height: auto;
+        padding-bottom: 10px;
+    }
+}
+
+/* @media (width < 1260px) {
+    .journey .discovery__items {
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+@media (width < 1260px) {
+    .journey .discovery__items {
+        grid-template-columns: 4fr 3fr;
+    }
+}
+
+@media (width < 1440px) {
+    .journey .discovery__img img:nth-child(2) {
+        /* height: 540px; */
+        height: clamp(16.563rem, -0.625rem + 85.938vw, 33.75rem);
+        object-fit: fill;
+    }
+}
+
+@media (width < 1120px) {
+    .journey .discovery__items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .journey .discovery__img {
+        order: 1;
+        padding-top: 60px;
+        margin: 0 auto;
+    }
+
+    .journey .dream {
+        order: 2;
+    }
+
+    .journey .dream__items {
+        order: 3;
+    }
+
+    .journey .dream__items li {
+        flex-grow: 1;
+    }
+
+    .journey .dream__title {
+        max-width: 100%;
+    }
+
+
+
+    /* .journey .discovery__img img:nth-child(1) {
+        margin: 0 auto;
+    }
+
+   
+    .journey .discovery__img img:nth-child(2) {
+        margin: 0 auto;
+         right: -20px;
+    } */
+
+
+}
+
