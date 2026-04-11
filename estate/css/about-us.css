@@ -36,12 +36,139 @@
     }
 }
 
-/* @media (width < 1260px) {
-    .journey .discovery__items {
-        display: flex;
-        flex-direction: column;
+
+.story .story__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    .story__values {
+        flex-basis: 520px;
     }
-} */
+
+    .story__trust {
+        /* flex-grow: 1; */
+        border: 1px solid #262626;
+        box-shadow: 0px 0px 0px 8px #191919;
+        border-radius: 12px;
+        padding: 50px 60px;
+    }
+
+    .story__values img {
+        width: 55px;
+        height: 24px;
+        padding-bottom: 7px;
+    }
+
+    .story__values h2 {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 150%;
+        color: #FFFFFF;
+        padding-bottom: 10px;
+    }
+
+    .story__values p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #999999;
+    }
+}
+
+.story__trust ul {
+    li:first-child {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #262626;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        /* gap: 50px; */
+
+        .story__trust-item:first-of-type {
+            margin-right: 30px;
+            padding-right: 30px;
+            border-right: 1px solid #262626;
+        }
+
+        .story__trust-head {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+
+            .trust__head-img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #703BF7;
+                background-color: #141414;
+
+                img {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+
+            >span {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 150%;
+                color: #FFFFFF;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            color: #999999;
+            max-width: 410px;
+        }
+    }
+}
+
+
+@media (width < 1440px) {
+
+    .story .story__items {
+        gap: 30px;
+    }
+
+    .story {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .story .story__items .story__trust {
+        padding: 20px 30px;
+    }
+}
+
+
+
+@media (width < 1270px) {
+    .story .story__items {
+        display: block;
+    }
+
+    .story__values {
+        margin-bottom: 60px;
+    }
+
+    .story__trust .story__trust-item {
+        flex-basis: 50%;
+    }
+
+
+}
 
 @media (width < 1260px) {
     .journey .discovery__items {
@@ -85,18 +212,59 @@
         max-width: 100%;
     }
 
-
-
-    /* .journey .discovery__img img:nth-child(1) {
-        margin: 0 auto;
-    }
-
-   
-    .journey .discovery__img img:nth-child(2) {
-        margin: 0 auto;
-         right: -20px;
-    } */
-
-
 }
 
+@media (width < 769px) {
+    .story {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (width < 670px) {
+    .story__trust ul li {
+        flex-direction: column;
+    }
+
+    .story__trust ul li .story__trust-item:first-of-type {
+        margin-right: 0px;
+        padding-right: 0px;
+        border-right: none;
+
+    }
+
+
+    .story__trust ul li .story__trust-item {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .story__trust-item {
+        width: 100%;
+    }
+
+    .story__trust ul li p {
+        max-width: 100%;
+    }
+
+    .story__trust ul li:first-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .story .story__items .story__trust {
+        padding: 24px;
+    }
+
+    .story__trust ul li .story__trust-item {
+        border-bottom: 1px solid #262626;
+    }
+
+    .story__trust ul li:nth-child(2) .story__trust-item:nth-child(2) {
+        border-bottom: none;
+         margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+}
