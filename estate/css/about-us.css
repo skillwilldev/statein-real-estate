@@ -56,9 +56,9 @@
     }
 
     .story__values img {
-        width: 55px;
-        height: 24px;
-        padding-bottom: 7px;
+        width: 69px;
+        height: auto;
+        padding-bottom: 10px;
     }
 
     .story__values h2 {
@@ -75,6 +75,10 @@
         line-height: 150%;
         color: #999999;
     }
+}
+
+.story {
+    margin-bottom: 110px;
 }
 
 .story__trust ul {
@@ -136,23 +140,94 @@
 }
 
 
+.journey .dream {
+    padding-left: 0;
+}
+
+.journey .dream__items {
+    padding-left: 0;
+}
+
+.achievements {
+    margin-bottom: 110px;
+}
+
+.achievements__top {
+    max-width: 1300px;
+    margin-bottom: 110px;
+
+    >img {
+        width: 69px;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: #999999;
+    }
+}
+
+.achievements__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 40px;
+
+    .achievements__item {
+        padding: clamp(1.875rem, 1.625rem + 1.250vw, 3.125rem);
+        border: 1px solid #262626;
+        box-shadow: 0px 0px 0px 8px #191919;
+        border-radius: 12px;
+
+        h3 {
+            font-weight: 600;
+            font-size: clamp(1.25rem, 1.125rem + 0.625vw, 1.875rem);
+            line-height: 150%;
+            color: #FFFFFF;
+            padding-bottom: 30px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: clamp(0.875rem, 0.825rem + 0.250vw, 1.125rem);
+            line-height: 150%;
+            color: #999999;
+        }
+    }
+}
+
+.experience .achievements__top {
+    max-width: 100%;
+}
+
+
+
 @media (width < 1440px) {
 
     .story .story__items {
         gap: 30px;
     }
 
-    .story {
+    .story,
+    .achievements {
         padding-left: 40px;
         padding-right: 40px;
     }
+
 
     .story .story__items .story__trust {
         padding: 20px 30px;
     }
 }
-
-
 
 @media (width < 1270px) {
     .story .story__items {
@@ -166,8 +241,6 @@
     .story__trust .story__trust-item {
         flex-basis: 50%;
     }
-
-
 }
 
 @media (width < 1260px) {
@@ -181,6 +254,23 @@
         /* height: 540px; */
         height: clamp(16.563rem, -0.625rem + 85.938vw, 33.75rem);
         object-fit: fill;
+    }
+}
+
+@media (width < 1300px) {
+    .journey .discovery__inner {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (width < 1260px) {
+
+    .journey .discovery__inner,
+    .achievements,
+    .story {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -212,6 +302,16 @@
         max-width: 100%;
     }
 
+}
+
+@media (width < 880px) {
+
+    .journey .discovery__inner,
+    .story,
+    .achievements {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 @media (width < 769px) {
@@ -263,7 +363,7 @@
 
     .story__trust ul li:nth-child(2) .story__trust-item:nth-child(2) {
         border-bottom: none;
-         margin-bottom: 0;
+        margin-bottom: 0;
         padding-bottom: 0;
     }
 
