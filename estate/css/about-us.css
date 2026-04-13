@@ -63,7 +63,7 @@
 
     .story__values h2 {
         font-weight: 600;
-        font-size: 38px;
+        font-size: clamp(1.75rem, 1.5rem + 1.250vw, 3rem);
         line-height: 150%;
         color: #FFFFFF;
         padding-bottom: 10px;
@@ -71,7 +71,7 @@
 
     .story__values p {
         font-weight: 500;
-        font-size: 16px;
+        font-size: clamp(0.875rem, 0.825rem + 0.250vw, 1.125rem);
         line-height: 150%;
         color: #999999;
     }
@@ -149,12 +149,12 @@
 }
 
 .achievements {
-    margin-bottom: 110px;
+    margin-bottom: clamp(3.75rem, 3.125rem + 3.125vw, 6.875rem);
 }
 
 .achievements__top {
     max-width: 1300px;
-    margin-bottom: 110px;
+    margin-bottom: clamp(2.5rem, 2rem + 2.500vw, 5rem);
 
     >img {
         width: 69px;
@@ -164,14 +164,14 @@
 
     h2 {
         font-weight: 600;
-        font-size: 48px;
+        font-size: clamp(1.75rem, 1.5rem + 1.250vw, 3rem);
         line-height: 150%;
         color: #FFFFFF;
     }
 
     p {
         font-weight: 500;
-        font-size: 18px;
+        font-size: clamp(0.875rem, 0.825rem + 0.250vw, 1.125rem);
         line-height: 150%;
         color: #999999;
     }
@@ -205,8 +205,82 @@
     }
 }
 
+.experience {
+    margin-bottom: clamp(3.75rem, 3.125rem + 3.125vw, 6.875rem);
+}
+
 .experience .achievements__top {
     max-width: 100%;
+}
+
+.experience .achievements__top {
+    margin-bottom: 80px;
+}
+
+.experience__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(512px, 1fr));
+    gap: 30px;
+    align-items: end;
+}
+
+.experience .experience__item {
+    .experience__item-title {
+        font-weight: 500;
+        font-size: clamp(1rem, 0.95rem + 0.250vw, 1.25rem);
+        line-height: 150%;
+        color: #FFFFFF;
+        border-left: 1px solid #703BF7;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: clamp(1rem, 0.95rem + 0.250vw, 1.25rem);
+        padding-right: 20px;
+
+
+    }
+
+    .experience__item-body {
+        height: 238px;
+
+        padding: clamp(1.875rem, 1.625rem + 1.250vw, 3.125rem);
+        border-radius: 0px 12px 12px 12px;
+        border: 1px solid transparent;
+        background-image:
+            linear-gradient(120.79deg, rgba(112, 59, 247, 0.2) -49.01%, #141414 15%),
+            radial-gradient(circle at 0% 0%, #703BF7 0%, transparent 70%),
+            linear-gradient(to bottom, #703BF7, transparent),
+            linear-gradient(to right, #703BF7, transparent),
+            linear-gradient(#262626, #262626);
+
+        background-size:
+            100% 100%,
+            150px 150px,
+            1px 150px,
+            150px 1px,
+            100% 100%;
+
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-origin: border-box;
+        background-clip: padding-box, border-box, border-box, border-box, border-box;
+
+
+
+        h3 {
+            font-weight: 600;
+            font-size: clamp(1.125rem, 1.025rem + 0.500vw, 1.625rem);
+            line-height: 150%;
+            color: #FFFFFF;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: clamp(0.875rem, 0.825rem + 0.250vw, 1.125rem);
+            line-height: 150%;
+            color: #999999;
+        }
+    }
 }
 
 
@@ -218,7 +292,8 @@
     }
 
     .story,
-    .achievements {
+    .achievements,
+    .experience {
         padding-left: 40px;
         padding-right: 40px;
     }
@@ -268,7 +343,8 @@
 
     .journey .discovery__inner,
     .achievements,
-    .story {
+    .story,
+    .experience {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -308,7 +384,8 @@
 
     .journey .discovery__inner,
     .story,
-    .achievements {
+    .achievements,
+    .experience {
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -367,4 +444,12 @@
         padding-bottom: 0;
     }
 
+}
+
+@media (width < 520px) {
+
+    .achievements__items,
+    .experience__items {
+        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    }
 }

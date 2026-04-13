@@ -890,20 +890,20 @@ footer .footer__top-cover {
 
     .footer__nav-col h3 {
         font-weight: 500;
-        font-size: 20px;
+        font-size: clamp(1rem, 0.95rem + 0.250vw, 1.25rem);
         line-height: 24px;
         letter-spacing: -0.006em;
         color: #999999;
-        padding-bottom: 30px;
+        padding-bottom: clamp(1rem, 0.825rem + 0.875vw, 1.875rem);
     }
 
     .footer__nav-col ul li:not(:last-child) {
-        padding-bottom: 20px;
+        padding-bottom:clamp(0.5rem, 0.35rem + 0.750vw, 1.25rem);
     }
 
     .footer__nav-col ul li a {
         font-weight: 500;
-        font-size: 18px;
+        font-size: clamp(0.875rem, 0.825rem + 0.250vw, 1.125rem);
         line-height: 24px;
         letter-spacing: -0.006em;
         color: #fff;
