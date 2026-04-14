@@ -27,6 +27,8 @@ body {
     -ms-overflow-style: none;
 }
 
+
+
 .flex {
     display: flex;
     align-items: center;
@@ -898,7 +900,7 @@ footer .footer__top-cover {
     }
 
     .footer__nav-col ul li:not(:last-child) {
-        padding-bottom:clamp(0.5rem, 0.35rem + 0.750vw, 1.25rem);
+        padding-bottom: clamp(0.5rem, 0.35rem + 0.750vw, 1.25rem);
     }
 
     .footer__nav-col ul li a {

@@ -382,13 +382,20 @@
     display: flex;
     gap: 50px;
     align-items: start;
+    /* padding-bottom: 50px;
+    margin-bottom: 20px; */
+    border-bottom: 1px solid #262626;
+    overflow-x: auto;
+    padding: 8px 8px 50px 8px;
+    margin: -8px -8px 20px -8px;
 
     .enterprises__item {
         background-color: #141414;
         border: 1px solid #262626;
         box-shadow: 0px 0px 0px 8px #191919;
         border-radius: 12px;
-        padding: 50px;
+        padding: clamp(1.5rem, 1.175rem + 1.625vw, 3.125rem);
+        min-width: 770px;
 
         .enterprises__visits {
             display: flex;
@@ -403,14 +410,14 @@
 
                 span {
                     font-weight: 500;
-                    font-size: 18px;
+                    font-size: clamp(0.875rem, 0.825rem + 0.250vw, 1.125rem);
                     line-height: 150%;
                     color: #999999;
                 }
 
                 h3 {
                     font-weight: 600;
-                    font-size: 30px;
+                    font-size: clamp(1.25rem, 1.125rem + 0.625vw, 1.875rem);
                     line-height: 150%;
                     color: #FFFFFF;
                 }
@@ -418,10 +425,10 @@
 
             >button {
                 font-weight: 500;
-                font-size: 18px;
+                font-size: clamp(0.875rem, 0.825rem + 0.250vw, 1.125rem);
                 line-height: 150%;
                 color: #FFFFFF;
-                padding: 18px 24px;
+                padding: clamp(0.875rem, 0.825rem + 0.250vw, 1.125rem) 24px;
                 background: #1A1A1A;
                 border: 1px solid #262626;
                 border-radius: 10px;
@@ -490,7 +497,7 @@
 
             >span {
                 font-weight: 500;
-                font-size: 18px;
+                font-size: clamp(0.875rem, 0.825rem + 0.250vw, 1.125rem);
                 line-height: 150%;
                 color: #999999;
                 display: inline-block;
@@ -499,7 +506,7 @@
 
             p {
                 font-weight: 500;
-                font-size: 18px;
+                font-size: clamp(0.875rem, 0.825rem + 0.250vw, 1.125rem);
                 line-height: 150%;
                 color: #FFFFFF;
             }
@@ -517,6 +524,7 @@
     .achievements,
     .experience,
     .team,
+    .enterprises,
     .enterprises {
         padding-left: 40px;
         padding-right: 40px;
@@ -535,6 +543,10 @@
 
     .team__cards .team__card .team__card-person .team__card-social {
         padding: 12px 20px;
+    }
+
+    .enterprises__items .enterprises__item {
+        padding: 40px;
     }
 }
 
@@ -573,6 +585,7 @@
     .story,
     .experience,
     .team,
+    .enterprises,
     .enterprises {
         padding-left: 20px;
         padding-right: 20px;
@@ -616,11 +629,27 @@
     .achievements,
     .experience,
     .team,
+    .enterprises,
     .enterprises {
         padding-left: 16px;
         padding-right: 16px;
     }
+
+    .enterprises__visits {
+        display: block !important;
+
+        button {
+            width: 100% !important;
+        }
+
+        .enterprises__visits-item {
+            margin-bottom: 20px;
+        }
+    }
+
 }
+
+
 
 @media (width < 769px) {
     .story {
