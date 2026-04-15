@@ -167,7 +167,7 @@ background-clip: padding-box, border-box, border-box, border-box, border-box;
 No build step required — open directly in a browser.
 
 ```bash
-git clone https://github.com/meloodev/estatein.git
+git clone https://github.com/skillwilldev/statein-real-estate.git
 cd estatein
 # Open index.html in your browser
 # Or use Live Server in VS Code
