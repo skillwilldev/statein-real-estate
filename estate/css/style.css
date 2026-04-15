@@ -426,7 +426,7 @@ h1 {
 .title-block {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     /* margin-bottom: 80px; */
     margin-bottom: clamp(2.5rem, 2rem + 2.500vw, 5rem);
 
@@ -452,7 +452,7 @@ h1 {
         line-height: 150%;
         color: #999999;
         /* max-width: 1140px; */
-        max-width: clamp(59.5rem, 24.812rem + 38.542vw, 71.063rem);
+        max-width: clamp(50.938rem, 22.85rem + 40.125vw, 71rem);
         width: 100%;
     }
 
@@ -770,12 +770,12 @@ h1 {
         background-color: #141414;
         border: 1px solid #262626;
         border-radius: 12px;
-        padding: 50px;
+        padding: clamp(1.875rem, 1.625rem + 1.250vw, 3.125rem);
         min-width: 512px;
 
         h3 {
             font-weight: 600;
-            font-size: 24px;
+            font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
             line-height: 150%;
             color: #FFFFFF;
             /* padding-bottom: 30px; */
@@ -783,7 +783,7 @@ h1 {
 
         p {
             font-weight: 500;
-            font-size: 18px;
+            font-size: clamp(0.875rem, 0.825rem + 0.250vw, 1.125rem);
             line-height: 150%;
             color: #999999;
         }
@@ -791,7 +791,7 @@ h1 {
         a {
             display: inline-block;
             font-weight: 500;
-            font-size: 18px;
+            font-size: clamp(0.875rem, 0.825rem + 0.250vw, 1.125rem);
             line-height: 131%;
             letter-spacing: -0.006em;
             color: #FFFFFF;
@@ -1028,9 +1028,9 @@ footer .footer__top-cover {
         padding-right: 40px;
     }
 
-    .title-block .title-block-top p {
+    /* .title-block .title-block-top p {
         max-width: 830px;
-    }
+    } */
 }
 
 @media (width < 1260px) {
@@ -1224,6 +1224,10 @@ footer .footer__top-cover {
         padding-left: 16px;
         padding-right: 16px;
     }
+
+    .frequently__items .frequently__item a {
+        max-width: 100%;
+    }
 }
 
 @media (width < 910px) {
@@ -1391,7 +1395,7 @@ footer .footer__top-cover {
 
         a {
             padding: clamp(0.625rem, -0.089rem + 3.571vw, 1.125rem) clamp(0.625rem, -0.089rem + 3.571vw, 1.125rem);
-            max-width: clamp(7.063rem, 4.92rem + 10.714vw, 8.563rem);
+            /* max-width: clamp(7.063rem, 4.92rem + 10.714vw, 8.563rem); */
             border-radius: clamp(0.438rem, 0.17rem + 1.339vw, 0.625rem);
         }
     }
