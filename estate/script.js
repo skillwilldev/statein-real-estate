@@ -1,16 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 let mm = gsap.matchMedia();
 
-gsap.from('.dream__items li', {
-    opacity: 0, y: 28, duration: 0.6,
-    stagger: 0.3, ease: 'power2.out',
-    scrollTrigger: {
-        trigger: '.dream__items li',
-        start: 'top 85%',
-        once: true,
-
-    }
-});
 
 
 gsap.from('header', {
@@ -25,8 +15,16 @@ gsap.from('header', {
 });
 
 
+gsap.from('.dream__items li', {
+    opacity: 0, y: 28, duration: 0.6,
+    stagger: 0.3, ease: 'power2.out',
+    scrollTrigger: {
+        trigger: '.dream__items li',
+        start: 'top 85%',
+        once: true,
 
-
+    }
+});
 
 
 
