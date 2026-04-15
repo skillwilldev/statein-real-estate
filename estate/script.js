@@ -44,7 +44,7 @@ mm.add("(min-width: 768px)", () => {
 mm.add("(max-width: 768px)", () => {
     gsap.from('.team__card', {
         opacity: 0, y: 28, duration: 0.6,
-        stagger: 1, ease: 'power2.out',
+        stagger: 0.6, ease: 'power2.out',
         scrollTrigger: {
             trigger: '.team__card',
             start: 'top 85%',
