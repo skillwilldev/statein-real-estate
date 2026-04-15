@@ -192,7 +192,6 @@ cd estatein
 
 **Melik Papikyan**  
 Frontend Developer  
-📧 melikpapikyan@gmail.com  
 🐙 [GitHub](https://github.com/skillwilldev/statein-real-estate)  
 🎨 [Figma Design](https://www.figma.com/design/7ho6uFtpsjtWYNWbwO6H2e/Untitled?node-id=0-1&p=f&t=4az2iSroKJ87kaEt-0)
 
